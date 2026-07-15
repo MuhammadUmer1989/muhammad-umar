@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Abdul Qudoos - Senior Finance & Accounting Executive</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet" />
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+    <style>
+        /* ---------- RESET & BASE ---------- */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            background: #f1f5f9;
+            color: #0f172a;
+            line-height: 1.6;
+            padding: 30px 16px;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            background: #ffffff;
+            border-radius: 28px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.07);
+            padding: 40px 45px;
+        }
+
+        /* ---------- HEADER ---------- */
+        .header {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: flex-start;
+            border-bottom: 2px solid #eef2f6;
+            padding-bottom: 28px;
+            margin-bottom: 28px;
+        }
+
+        .header-left h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            letter-spacing: -0.02em;
+            color: #0f172a;
+        }
+
+        .header-left .tagline {
+            font-size: 1.15rem;
+            font-weight: 400;
+            color: #475569;
+            margin-top: 2px;
+        }
+
+        .contact-row {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 16px 28px;
+            margin-top: 12px;
+            font-size: 0.95rem;
+            color: #334155;
+        }
+
+        .contact-row a {
+            color: #2563eb;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        .contact-row a:hover {
+            text-decoration: underline;
+        }
+        .contact-row i {
+            color: #2563eb;
+            width: 20px;
+            margin-right: 4px;
+        }
+
+        .badge {
+            background: #2563eb;
+            color: #fff;
+            padding: 8px 24px;
+            border-radius: 60px;
+            font-weight: 600;
+            font-size: 0.95rem;
+            white-space: nowrap;
+            margin-top: 6px;
+        }
+        .badge i {
+            margin-right: 8px;
+        }
+
+        /* ---------- PROFILE SUMMARY ---------- */
+        .summary {
+            background: #f8fafc;
+            padding: 20px 26px;
+            border-radius: 16px;
+            border-left: 6px solid #2563eb;
+            margin-bottom: 32px;
+            font-size: 1.02rem;
+            color: #1e293b;
+        }
+        .summary i {
+            color: #2563eb;
+            margin-right: 8px;
+        }
+
+        /* ---------- SECTION TITLES ---------- */
+        .section-title {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: #0f172a;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            border-bottom: 2px solid #eef2f6;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+        .section-title i {
+            color: #2563eb;
+            font-size: 1.3rem;
+        }
+
+        /* ---------- SKILLS ---------- */
+        .skills-wrap {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-bottom: 34px;
+        }
+        .skill-tag {
+            background: #eef2ff;
+            color: #1e3a8a;
+            padding: 6px 20px;
+            border-radius: 40px;
+            font-size: 0.88rem;
+            font-weight: 500;
+        }
+
+        /* ---------- JOBS ---------- */
+        .job {
+            margin-bottom: 28px;
+        }
+        .job-head {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: baseline;
+            gap: 4px 12px;
+        }
+        .job-title {
+            font-size: 1.15rem;
+            font-weight: 700;
+            color: #0f172a;
+        }
+        .job-company {
+            font-weight: 600;
+            color: #2563eb;
+        }
+        .job-date {
+            background: #f1f5f9;
+            padding: 2px 16px;
+            border-radius: 30px;
+            font-size: 0.85rem;
+            font-weight: 500;
+            color: #475569;
+        }
+
+        .job-duties {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px 14px;
+            margin-top: 10px;
+            list-style: none;
+        }
+        .job-duties li {
+            background: #f8fafc;
+            border: 1px solid #e9edf2;
+            padding: 4px 18px;
+            border-radius: 30px;
+            font-size: 0.88rem;
+            color: #334155;
+        }
+        .job-duties li i {
+            color: #2563eb;
+            margin-right: 8px;
+            font-size: 0.75rem;
+        }
+
+        /* ---------- EDUCATION ---------- */
+        .edu-item {
+            background: #f8fafc;
+            padding: 14px 24px;
+            border-radius: 14px;
+            border-left: 4px solid #2563eb;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 12px;
+        }
+        .edu-info strong {
+            font-size: 1.05rem;
+            display: block;
+        }
+        .edu-info span {
+            color: #475569;
+            font-size: 0.95rem;
+        }
+        .edu-year {
+            background: #e2e8f0;
+            padding: 4px 18px;
+            border-radius: 30px;
+            font-size: 0.82rem;
+            font-weight: 600;
+            color: #1e293b;
+        }
+
+        /* ---------- RESPONSIVE ---------- */
+        @media (max-width: 768px) {
+            .container {
+                padding: 24px 18px;
+            }
+            .header {
+                flex-direction: column;
+                align-items: stretch;
+                gap: 12px;
+            }
+            .badge {
+                align-self: flex-start;
+            }
+            .job-head {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            .edu-item {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 6px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+
+    <!-- ===== HEADER ===== -->
+    <header class="header">
+        <div class="header-left">
+            <h1>Abdul Qudoos</h1>
+            <div class="tagline">Senior Finance &amp; Accounting Executive</div>
+            <div class="contact-row">
+                <span><i class="fas fa-map-pin"></i> Rawalpindi, Pakistan</span>
+                <span><i class="fas fa-phone-alt"></i> <a href="tel:+923170822783">+92 317 0822783</a></span>
+                <span><i class="fas fa-envelope"></i> <a href="mailto:mu946276@gmail.com">mu946276@gmail.com</a></span>
+                <span><i class="fas fa-globe"></i> <a href="https://abdul-qudoos.com" target="_blank">abdul-qudoos.com</a></span>
+            </div>
+        </div>
+        <div class="badge">
+            <i class="fas fa-user-tie"></i> 10+ Years Experience
+        </div>
+    </header>
+
+    <!-- ===== SUMMARY ===== -->
+    <div class="summary">
+        <i class="fas fa-quote-left"></i>
+        Senior finance and accounting executive offering 10+ years of expertise in establishing and leading all aspects of accounting and finance operations of multinationals. Serves as a solid foundation and knowledgeable advisor throughout the financial decision-making process. Effectively analyzes financial data, recommends tools, systems, and accounting measures that drive profitable performance, limits costs, and significantly improves overall profit margins and cash flow. Excellent cross-functional management skills including working across multiple departments.
+    </div>
+
+    <!-- ===== SKILLS ===== -->
+    <h2 class="section-title"><i class="fas fa-cogs"></i> Core Skills</h2>
+    <div class="skills-wrap">
+        <span class="skill-tag">Customer Service</span>
+        <span class="skill-tag">Financial Reporting</span>
+        <span class="skill-tag">Financial Analysis</span>
+        <span class="skill-tag">Auditing &amp; Internal Audit</span>
+        <span class="skill-tag">Taxation &amp; Tax Planning</span>
+        <span class="skill-tag">Financial Forecasting</span>
+        <span class="skill-tag">Risk Analysis</span>
+        <span class="skill-tag">Bookkeeping</span>
+        <span class="skill-tag">Accounts Payable/Receivable</span>
+        <span class="skill-tag">Payroll Management</span>
+        <span class="skill-tag">Budgeting</span>
+        <span class="skill-tag">Accounting Software</span>
+    </div>
+
+    <!-- ===== EMPLOYMENT ===== -->
+    <h2 class="section-title"><i class="fas fa-briefcase"></i> Employment History</h2>
+
+    <!-- Job 1 -->
+    <div class="job">
+        <div class="job-head">
+            <span><span class="job-title">Accountant</span> – <span class="job-company">Mark Industries, Islamabad</span></span>
+            <span class="job-date">Nov 2011 – Aug 2013</span>
+        </div>
+        <ul class="job-duties">
+            <li><i class="fas fa-file-invoice"></i> Financial statements, budgets, tax returns</li>
+            <li><i class="fas fa-chart-line"></i> Financial analysis &amp; business plans</li>
+            <li><i class="fas fa-check-circle"></i> Auditing &amp; internal audits</li>
+            <li><i class="fas fa-calculator"></i> Tax preparation &amp; planning</li>
+            <li><i class="fas fa-arrow-trend-up"></i> Cost &amp; revenue forecasting</li>
+            <li><i class="fas fa-shield-alt"></i> Risk analysis</li>
+            <li><i class="fas fa-book"></i> Bookkeeping &amp; accuracy</li>
+            <li><i class="fas fa-lightbulb"></i> Financial advice &amp; solutions</li>
+        </ul>
+    </div>
+
+    <!-- Job 2 -->
+    <div class="job">
+        <div class="job-head">
+            <span><span class="job-title">Accountant</span> – <span class="job-company">Bahria Town Pvt Ltd, Islamabad</span></span>
+            <span class="job-date">Apr 2014 – Dec 2019</span>
+        </div>
+        <ul class="job-duties">
+            <li><i class="fas fa-university"></i> Bank reconciliation &amp; ledgers</li>
+            <li><i class="fas fa-user-check"></i> Employee expenditure analysis</li>
+            <li><i class="fas fa-file-alt"></i> Income &amp; expenditure account management</li>
+            <li><i class="fas fa-chart-pie"></i> Financial report generation</li>
+            <li><i class="fas fa-balance-scale"></i> Tax filing &amp; compliance</li>
+            <li><i class="fas fa-database"></i> Accounting software management</li>
+        </ul>
+    </div>
+
+    <!-- Job 3 -->
+    <div class="job">
+        <div class="job-head">
+            <span><span class="job-title">Accountant</span> – <span class="job-company">Reno Carpet Industries, Islamabad</span></span>
+            <span class="job-date">Jan 2020 – Apr 2020</span>
+        </div>
+        <ul class="job-duties">
+            <li><i class="fas fa-file-invoice"></i> Customer invoicing &amp; billing</li>
+            <li><i class="fas fa-hand-holding-usd"></i> Accounts receivable management</li>
+            <li><i class="fas fa-headset"></i> Customer inquiries &amp; dispute resolution</li>
+            <li><i class="fas fa-search"></i> Invoice discrepancy investigation</li>
+            <li><i class="fas fa-chart-simple"></i> Financial data analysis</li>
+            <li><i class="fas fa-tasks"></i> Daily AR reports to management</li>
+        </ul>
+    </div>
+
+    <!-- Job 4 -->
+    <div class="job">
+        <div class="job-head">
+            <span><span class="job-title">International Sales Executive</span> – <span class="job-company">Celelex Communication, Rawalpindi</span></span>
+            <span class="job-date">Apr 2020 – Dec 2022</span>
+        </div>
+        <ul class="job-duties">
+            <li><i class="fas fa-headset"></i> Customer service &amp; issue resolution</li>
+            <li><i class="fas fa-phone"></i> High volume inbound/outbound calls</li>
+            <li><i class="fas fa-handshake"></i> Client relationship management</li>
+            <li><i class="fas fa-bullseye"></i> Sales target achievement</li>
+            <li><i class="fas fa-cart-plus"></i> Order, cancellation, returns processing</li>
+            <li><i class="fas fa-calendar-check"></i> Appointment scheduling</li>
+            <li><i class="fas fa-arrow-up"></i> Process improvement recommendations</li>
+        </ul>
+    </div>
+
+    <!-- Job 5 -->
+    <div class="job">
+        <div class="job-head">
+            <span><span class="job-title">Accountant</span> – <span class="job-company">Punjab Group of Colleges, Rawalakot</span></span>
+            <span class="job-date">Feb 2022 – Jan 2024</span>
+        </div>
+        <ul class="job-duties">
+            <li><i class="fas fa-file-invoice"></i> Financial documentation &amp; reporting</li>
+            <li><i class="fas fa-credit-card"></i> Tax payments &amp; accounts payable</li>
+            <li><i class="fas fa-check-double"></i> Auditing</li>
+            <li><i class="fas fa-chart-simple"></i> Evaluating accounting strategies</li>
+            <li><i class="fas fa-users"></i> Payroll management</li>
+        </ul>
+    </div>
+
+    <!-- Job 6 -->
+    <div class="job">
+        <div class="job-head">
+            <span><span class="job-title">Accountant</span> – <span class="job-company">Ufone Franchise, Rawalakot</span></span>
+            <span class="job-date">Mar 2024 – Present</span>
+        </div>
+        <ul class="job-duties">
+            <li><i class="fas fa-file-invoice"></i> Financial documentation &amp; reporting</li>
+            <li><i class="fas fa-credit-card"></i> Tax payments &amp; accounts payable</li>
+            <li><i class="fas fa-check-double"></i> Auditing</li>
+            <li><i class="fas fa-chart-simple"></i> Evaluating accounting strategies</li>
+            <li><i class="fas fa-users"></i> Payroll management</li>
+        </ul>
+    </div>
+
+    <!-- ===== EDUCATION ===== -->
+    <h2 class="section-title"><i class="fas fa-graduation-cap"></i> Education</h2>
+
+    <div class="edu-item">
+        <div class="edu-info">
+            <strong>Master in Accounting and Finance</strong>
+            <span>Virtual University, Rawalpindi</span>
+        </div>
+        <span class="edu-year">Apr 2019 – Jun 2021 &bull; 67%</span>
+    </div>
+
+    <div class="edu-item">
+        <div class="edu-info">
+            <strong>B.Com (IT)</strong>
+            <span>RCC Satellite Town, Rawalpindi</span>
+        </div>
+        <span class="edu-year">Mar 2012 – May 2014</span>
+    </div>
+
+    <div class="edu-item">
+        <div class="edu-info">
+            <strong>FSc General</strong>
+            <span>Govt Gordon College, Rawalpindi</span>
+        </div>
+        <span class="edu-year">Feb 2008 – Jul 2010</span>
+    </div>
+
+</div>
+<!-- end container -->
+
+</body>
+  </html>
